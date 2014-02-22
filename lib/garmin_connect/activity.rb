@@ -82,8 +82,8 @@ module GarminConnect
     def time(what = :begin)
       case what
       when :begin
-        offset = self.activityTimeZone.display[4..9]
-        Time.parse(self.activitySummary.BeginTimestamp.withUnitAbbr)
+        # offset = self.activityTimeZone.display[4..9]
+        Time.parse(self.activitySummary.BeginTimestamp.value)
       end
     end
     def hr_data?
