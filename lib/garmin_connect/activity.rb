@@ -1,3 +1,4 @@
+require 'active_support/time'
 module GarminConnect
   class User
     class << self
@@ -80,11 +81,9 @@ module GarminConnect
       self.activityId
     end
     def time(what = :begin)
-      case what
-      when :begin
-        # offset = self.activityTimeZone.display[4..9]
-        Time.parse(self.activitySummary.BeginTimestamp.value)
-      end
+      h = what == :begin ? self.activitySummary.BeginTimestamp : self.activitySummary.EndTimestamp
+      ActiveSupport::TimeWithZone.new(Time.parse(h.value), ActiveSupport::TimeZone.new(h.uom))
+    end
     end
     def hr_data?
       # puts @attributes.keys
