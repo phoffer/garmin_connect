@@ -84,7 +84,6 @@ module GarminConnect
       h = what == :begin ? self.activitySummary.BeginTimestamp : self.activitySummary.EndTimestamp
       ActiveSupport::TimeWithZone.new(Time.parse(h.value), ActiveSupport::TimeZone.new(h.uom))
     end
-    end
     def hr_data?
       # puts @attributes.keys
       activitySummary.has_key? 'WeightedMeanHeartRate'
