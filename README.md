@@ -1,6 +1,6 @@
 # GarminConnect
 
-TODO: Write a gem description
+I wrote this so I could more easily work with data from Garmin Connect. It's not really ready to be a gem, but I wanted to use it in a couple projects, so I'm releasing it for my own convenience. Usage instructions coming soon.
 
 ## Installation
 
@@ -27,31 +27,3 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-## Resources
-  * http://sergeykrasnov.ru/subsites/dev/garmin-connect-statisics/
-  * github.com/noginn/GarminConnectClient
-  * connect.garmin.com/proxy/activity-service-1.3/
-  * http://connect.garmin.com/proxy/activity-service-1.3/json/activity/329335676
-  * http://connect.garmin.com/proxy/activity-service-1.3/json/activityDetails/329335676
-
-  * Code organization ideas
-  * https://github.com/codahale/bcrypt-ruby/tree/master/lib/bcrypt
-  * https://github.com/ericboehs/nest_thermostat/blob/master/lib/nest_thermostat/nest.rb
-  * https://github.com/jnunemaker/httparty/blob/master/lib/httparty.rb
-
-  * -- Garmin connect examples ------------
-  * www.sideburn.org/garmin/
-  * ^^^^ actually works to get private ones
-  * http://blog.jacobsonhome.com/2012/04/garcon-track-finder.html
-  * www.jacobsonhome.com/m/garcon/
-
-  * github.com/noginn/GarminConnectClient/blob/master/src/Endurance/GarminConnect/GarminConnectClient.php
-  * sergeykrasnov.ru/subsites/dev/garmin-connect-statisics/
-
-  * github.com/kjkjava/garmin-connect-export/blob/master/garmin-connect-export.php
-  * www.ciscomonkey.net/gc-to-dm-export/#fullscript
-
-  * github.com/angusws/tcx2nikeplus/blob/master/src/com/awsmithson/tcx2nikeplus/http/Garmin.java
-  * github.com/GoldenCheetah/GoldenCheetah/issues/587#issuecomment-17590008
-  * forums.garmin.com/archive/index.php/t-2774.html
