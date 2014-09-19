@@ -89,7 +89,7 @@ module GarminConnect
       activitySummary.has_key? 'WeightedMeanHeartRate'
     end
     def avg_hr
-      hr_data? and self.activitySummary.WeightedMeanHeartRate.value.to_i
+      hr_data? and self.activitySummary.WeightedMeanHeartRate.bpm.value.to_i
     end
     def distance
       activitySummary.SumDistance.value.to_f.round(2)
